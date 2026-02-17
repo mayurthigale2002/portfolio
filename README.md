@@ -1,16 +1,91 @@
-# React + Vite
+# 🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi 👋 I'm **Mayur Thigale**  
+A passionate **MERN Stack Developer** from India 🇮🇳  
 
-Currently, two official plugins are available:
+This is my personal portfolio website built to showcase my skills, projects, certifications, and contact information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔥 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌍 **Live Website:**  
+https://mayurs-portfolio-ashen.vercel.app/
 
-## Expanding the ESLint configuration
+📂 **GitHub Repository:**  
+https://github.com/mayurthigale2002/portfolio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+### 🚀 Frontend
+- React.js
+- Tailwind CSS
+- JavaScript (ES6+)
+- AOS (Animate On Scroll)
+- React Icons
+
+### ⚙ Backend (For Projects)
+- Node.js
+- Express.js
+- MongoDB
+  
+### 🌐 Deployment
+- Vercel
+
+---
+
+## ✨ Features
+
+- 🔥 Fully Responsive Design
+- 🎨 Modern Dark Theme UI
+- ✨ Animated Hero Section (Typing Effect)
+- 📱 Mobile Friendly Layout
+- 🛠 Tech Stack Section with Logos
+- 📂 Project Showcase with Live Links
+- 🎓 Certifications Section
+- 📞 Contact Section
+- 📄 Resume Download Option
+- 🌐 Social Media Integration
+
+---
+
+## 📂 Project Structure
+
+portfolio/
+│
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── Home.jsx
+│ │ ├── About.jsx
+│ │ ├── TechStack.jsx
+│ │ ├── Projects.jsx
+│ │ ├── Certification.jsx
+│ │ ├── Contact.jsx
+│ │ └── Footer.jsx
+│ │
+│ ├── App.jsx
+│ └── main.jsx
+│
+├── package.json
+└── README.md
+
+🎯 Future Improvements
+
+🌙 Dark/Light Mode Toggle
+📩 Live Contact Form (EmailJS)
+📝 Blog Section
+📊 GitHub API Integration
+💬 Testimonials Section
+
+👨‍💻 Author
+
+Mayur Thigale
+MERN Stack Developer
+📧 Email: mayurthigale2002@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/mayur-thigale-14b8312b1/
+💻 GitHub: https://github.com/mayur-thigale2002
+
