@@ -16,17 +16,37 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <h2 className="text-xl sm:text-2xl font-bold tracking-wide">
+          <h2 className="text-lg sm:text-2xl font-bold tracking-wide">
             MAYUR THIGALE
           </h2>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-8 font-medium">
-            <li><a href="/" className="hover:text-yellow-500 transition">Home</a></li>
-            <li><a href="/about" className="hover:text-yellow-500 transition">About</a></li>
-            <li><a href="/education" className="hover:text-yellow-500 transition">Education</a></li>
-            <li><a href="/projects" className="hover:text-yellow-500 transition">Projects</a></li>
-            <li><a href="/contact" className="hover:text-yellow-500 transition">Contact</a></li>
+            <li>
+              <a href="#home" className="hover:text-yellow-500 transition">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-yellow-500 transition">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#education" className="hover:text-yellow-500 transition">
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="hover:text-yellow-500 transition">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-yellow-500 transition">
+                Contact
+              </a>
+            </li>
           </ul>
 
           {/* Hamburger */}
@@ -34,7 +54,7 @@ const Navbar = () => {
             className="md:hidden text-3xl"
             onClick={() => setIsOpen(!isOpen)}
           >
-            ☰
+            {isOpen ? "✕" : "☰"}
           </button>
         </div>
 
@@ -44,12 +64,32 @@ const Navbar = () => {
             isOpen ? "max-h-96 mt-4" : "max-h-0"
           }`}
         >
-          <ul className="flex flex-col gap-4 text-center font-medium">
-            <li><a href="/" onClick={() => setIsOpen(false)}>Home</a></li>
-            <li><a href="/about" onClick={() => setIsOpen(false)}>About</a></li>
-            <li><a href="/education" onClick={() => setIsOpen(false)}>Education</a></li>
-            <li><a href="/projects" onClick={() => setIsOpen(false)}>Projects</a></li>
-            <li><a href="/contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+          <ul className="flex flex-col gap-4 text-center font-medium py-4">
+            <li>
+              <a href="#home" onClick={() => setIsOpen(false)}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={() => setIsOpen(false)}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#education" onClick={() => setIsOpen(false)}>
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => setIsOpen(false)}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={() => setIsOpen(false)}>
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

@@ -21,12 +21,9 @@ const Contact = () => {
     <>
       {/* ================= CONTACT SECTION ================= */}
       <section className="py-20 px-6 bg-black text-white" id="contact">
-        
         {/* Heading */}
         <div className="text-center mb-14" data-aos="fade-down">
-          <h1 className="text-3xl md:text-5xl font-bold">
-            CONTACT ME..!!
-          </h1>
+          <h1 className="text-3xl md:text-5xl font-bold">CONTACT ME..!!</h1>
           <p className="text-gray-400 mt-3">
             Below are the details to reach out to me!
           </p>
@@ -39,33 +36,44 @@ const Contact = () => {
           data-aos="fade-up"
         >
           {/* Address */}
-          <div className="bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-2 transition-all duration-500">
+          <a
+            href="https://www.google.com/maps?q=Pune,Maharashtra"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-2 transition-all duration-500"
+          >
             <FaLocationDot className="text-yellow-500 text-4xl mx-auto mb-4" />
             <h3 className="font-semibold text-lg">ADDRESS</h3>
             <p className="text-gray-400 mt-2">Pune, Maharashtra</p>
-          </div>
+          </a>
 
           {/* Phone */}
-          <div className="bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-2 transition-all duration-500">
+          <a
+            href="tel:+918600832098"
+            className="block bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-2 transition-all duration-500"
+          >
             <FaPhone className="text-yellow-500 text-4xl mx-auto mb-4" />
             <h3 className="font-semibold text-lg">CONTACT NO.</h3>
             <p className="text-gray-400 mt-2">+91 8600832098</p>
-          </div>
+          </a>
 
           {/* Email */}
-          <div className="bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-2 transition-all duration-500">
+          <a
+            href="mailto:mayurthigale2002@gmail.com"
+            className="block bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-2 transition-all duration-500"
+          >
             <FaEnvelope className="text-yellow-500 text-4xl mx-auto mb-4" />
             <h3 className="font-semibold text-lg">EMAIL ADDRESS</h3>
             <p className="text-gray-400 mt-2 break-all">
               mayurthigale2002@gmail.com
             </p>
-          </div>
+          </a>
         </div>
 
         {/* Resume Button */}
         <div className="text-center mt-14" data-aos="zoom-in">
           <a
-            href="/Mayur_Thigale_Resume.pdf"
+            href="/Mayur_Thigale_Software_Developer_Resume.pdf"
             download
             className="inline-block px-8 py-3 bg-yellow-500 text-black font-semibold rounded-full hover:bg-yellow-400 transition duration-300"
           >
@@ -76,10 +84,7 @@ const Contact = () => {
 
       {/* ================= SOCIAL SECTION ================= */}
       <section className="py-16 bg-black text-white">
-        <div
-          className="text-center max-w-4xl mx-auto"
-          data-aos="fade-up"
-        >
+        <div className="text-center max-w-4xl mx-auto" data-aos="fade-up">
           <h2 className="text-2xl md:text-3xl font-bold text-yellow-500">
             Find me on..!!
           </h2>
@@ -89,7 +94,6 @@ const Contact = () => {
 
           {/* Social Icons */}
           <div className="flex justify-center flex-wrap gap-6 text-2xl">
-            
             <a
               href="https://www.facebook.com/mayur.thigale.18/"
               target="_blank"
@@ -118,7 +122,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://github.com/mayur-thigale"
+              href="https://github.com/mayurthigale2002"
               target="_blank"
               rel="noreferrer"
               className="w-12 h-12 flex items-center justify-center bg-gray-900 rounded-full hover:bg-gray-700 transition duration-300"
@@ -134,7 +138,6 @@ const Contact = () => {
             >
               <FaYoutube />
             </a>
-
           </div>
         </div>
       </section>

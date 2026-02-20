@@ -11,12 +11,8 @@ const About = () => {
   }, []);
 
   return (
-    <section
-      id="about"
-      className="min-h-screen py-20 px-6 bg-black text-white"
-    >
+    <section id="about" className="min-h-screen py-20 px-6 bg-black text-white">
       <div className="max-w-7xl mx-auto">
-        
         {/* Title */}
         <h1
           className="text-3xl md:text-5xl font-bold text-center mb-6"
@@ -27,11 +23,9 @@ const About = () => {
         <div className="w-24 h-1 bg-yellow-500 mx-auto mb-12"></div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          
           {/* Left Side */}
           <div data-aos="fade-right">
             <div className="flex flex-col sm:flex-row gap-6 items-center">
-              
               {/* Image */}
               <img
                 src={profileImg}
@@ -41,12 +35,24 @@ const About = () => {
 
               {/* Basic Info */}
               <div className="text-gray-400 space-y-2 text-sm sm:text-base">
-                <p><span className="text-yellow-500 font-semibold">Name:</span> Mayur Thigale</p>
-                <p><span className="text-yellow-500 font-semibold">Profession:</span> Web Developer</p>
-                <p><span className="text-yellow-500 font-semibold">Skills:</span> HTML, CSS, Bootstrap, JavaScript</p>
                 <p>
-                  <span className="text-yellow-500 font-semibold">Bio:</span>{" "}
-                  A passionate web developer dedicated to creating dynamic and user-friendly websites.
+                  <span className="text-yellow-500 font-semibold">Name:</span>{" "}
+                  Mayur Thigale
+                </p>
+                <p>
+                  <span className="text-yellow-500 font-semibold">
+                    Profession:
+                  </span>{" "}
+                  Web Developer
+                </p>
+                <p>
+                  <span className="text-yellow-500 font-semibold">Skills:</span>{" "}
+                  HTML, CSS, Bootstrap, JavaScript
+                </p>
+                <p>
+                  <span className="text-yellow-500 font-semibold">Bio:</span> A
+                  passionate web developer dedicated to creating dynamic and
+                  user-friendly websites.
                 </p>
               </div>
             </div>
@@ -58,10 +64,10 @@ const About = () => {
               </h4>
 
               {[
-                { name: "HTML", level: "100%" },
-                { name: "CSS", level: "100%" },
-                { name: "Bootstrap", level: "75%" },
-                { name: "JavaScript", level: "50%" },
+                { name: "React", level: "95%" },
+                { name: "Node", level: "90%" },
+                { name: "Express", level: "85%" },
+                { name: "MongoDB", level: "80%" },
               ].map((skill, index) => (
                 <div key={index} className="mb-5">
                   <p className="mb-1 text-gray-300">{skill.name}</p>
@@ -81,10 +87,10 @@ const About = () => {
             <p className="leading-relaxed text-sm sm:text-base">
               I am Mayur Thigale, a passionate web developer dedicated to
               creating dynamic and user-friendly websites. With expertise in
-              HTML, CSS, JavaScript, and various frameworks, I strive to
-              deliver high-quality solutions that enhance user experience.
-              My goal is to continuously learn and grow in the ever-evolving
-              field of web development.
+              HTML, CSS, JavaScript, and various frameworks, I strive to deliver
+              high-quality solutions that enhance user experience. My goal is to
+              continuously learn and grow in the ever-evolving field of web
+              development.
             </p>
 
             <h4 className="text-xl font-semibold mt-8 mb-4 text-white">
@@ -92,14 +98,56 @@ const About = () => {
             </h4>
 
             <div className="space-y-3 text-sm sm:text-base">
-              <p><span className="text-yellow-500 font-semibold">Certification:</span> MERN Stack Certification</p>
-              <p><span className="text-yellow-500 font-semibold">Certification:</span> Microsoft Azure Certification</p>
-              <p><span className="text-yellow-500 font-semibold">Hobbies:</span> Reading, Traveling, Coding</p>
-              <p><span className="text-yellow-500 font-semibold">Languages:</span> English, Hindi, Marathi</p>
-              <p><span className="text-yellow-500 font-semibold">Location:</span> Pune, India</p>
+              <p>
+                <span className="text-yellow-500 font-semibold">
+                  Certification:
+                </span>{" "}
+                MERN Stack Certification
+              </p>
+              <p>
+                <span className="text-yellow-500 font-semibold">
+                  Certification:
+                </span>{" "}
+                Microsoft Azure Certification
+              </p>
+              <p>
+                <span className="text-yellow-500 font-semibold">Hobbies:</span>{" "}
+                Reading, Traveling, Coding
+              </p>
+              <p>
+                <span className="text-yellow-500 font-semibold">
+                  Languages:
+                </span>{" "}
+                English, Hindi, Marathi
+              </p>
+              <p>
+                <span className="text-yellow-500 font-semibold">Location:</span>{" "}
+                Pune, India
+              </p>
+            </div>
+
+            <div className="flex gap-4 mt-6">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/mayur-thigale-14b8312b1/",
+                    "_blank",
+                  )
+                }
+                className="px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition duration-300"
+              >
+                LinkedIn Profile
+              </button>
+              <button
+                onClick={() =>
+                  window.open("https://github.com/mayurthigale2002", "_blank")
+                }
+                className="px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition duration-300"
+              >
+                GitHub Profile
+              </button>
             </div>
           </div>
-
         </div>
       </div>
     </section>
